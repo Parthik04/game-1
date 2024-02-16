@@ -17,5 +17,3 @@ test("calculateCost function correctly calculates the total cost", () => {
   // Assertion to check if the total cost matches the expected value
   expect(totalCost).toBeCloseTo(172.8, 1); // Expected total cost for the provided input
 });
-
-module.exports = {}; // Exporting an empty object to satisfy Jest requirements
