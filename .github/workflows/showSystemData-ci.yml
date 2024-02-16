@@ -1,4 +1,4 @@
-name: showSystemData CI
+name: showSystemData CI Workflow
 
 on:
   push:
