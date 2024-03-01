@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Form</title>
+    <!-- Add Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="col-md-6 mx-auto">
+            <h2 class="mb-4">Simple Form</h2>
+
+            <form id="myform" action="/api/employees" method="post" onsubmit="handlesubmit(event)">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName">
+            </div>
+            <form method="post" enctype="multipart/form-data" onsubmit="handleSubmit(event)">
+                <input type="file" name="image">
+                <button class="btn btn-primary" type="submit">Submit File</button>
+            </form> -->
+
+<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+<!-- </form>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js if needed -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> --> --> -->
+
+
+<!-- <script>
+        function handleSubmit(event) {
+            event.preventDefault()
+        }
+
+    </script>
+
+</body> -->
+
+<!-- <script>
+    function handlesubmit(event) {
+        event.preventDefault(); // cancel the default submit behavior
+        const ourform = event.target;
+        const data = {
+            firstName: ourform.firstName.value,
+            lastName: ourform.lastName.value
+        };
+
+        // call fetch to send the data
+        fetch('/api/employees', {
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify(data) // Convert data object to  string
+        })
+            .then(response => response.json())
+            .then(json => {
+                alert(`New Employee created with ID ${json.lastInsertRowid}`)
+            })
+        // .catch(error => console.error('Error:', error)); //  catch block  errors 
+    }
+
+</script> -->
+<!-- 
+</html> -->
