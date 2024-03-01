@@ -25,15 +25,15 @@ describe("GET /api/artists", () => {
 //   });
 // });
 
-// describe("POST /api/albums/:albumId/albumart", () => {
-//   it("responds with json containing success message and updated album", async () => {
-//     const response = await request(app)
-//       .post("/api/albums/1/albumart")
-//       .attach("albumart", "_FrontendStarterFiles/albumart/testAlbumArt.jpg"); // Path to the album art image file
-//     expect(response.status).toBe(201);
-//     expect(response.body).toHaveProperty("changes", 1); // Assuming one row is affected
-//   });
-// });
+describe("POST /api/albums/:albumId/albumart", () => {
+  it("responds with json containing success message and updated album", async () => {
+    const response = await request(app)
+      .post("/api/albums/1/albumart")
+      .attach("albumart", "_FrontendStarterFiles/albumart/testAlbumArt.jpg"); // Path to the album art image file
+    expect(response.status).toBe(201);
+    expect(response.body).toHaveProperty("changes", 1); // Assuming one row is affected
+  });
+});
 
 describe("GET /api/artists/:artistId/albums", () => {
   it("responds with json containing a list of albums for a specific artist", async () => {
